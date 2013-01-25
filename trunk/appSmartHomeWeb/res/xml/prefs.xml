@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="preferencescreen" android:id="@+id/prefs_screen">
+	<PreferenceCategory android:title="服务器设置"
+		android:defaultValue="192.168.1.1">
+		<EditTextPreference android:title="服务器地址"
+			android:summary="RTDB Access Host IP" android:key="PrefsHostUrl"
+			android:order="0" android:defaultValue="192.168.1.127"></EditTextPreference>
+		<EditTextPreference android:title="登陆用户名"
+			android:summary="Host Login UserName" android:key="PrefsUserName"
+			android:order="1" android:defaultValue="root"></EditTextPreference>
+		<EditTextPreference android:title="主机登陆密码"
+			android:summary="Host Login Password" android:key="PrefsPassword"
+			android:order="2" android:defaultValue="root"></EditTextPreference>
+	</PreferenceCategory>
+</PreferenceScreen>
